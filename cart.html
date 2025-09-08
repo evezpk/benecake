@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carrinho Benécake</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>Carrinho Benécake</h1>
+  </header> <a href="javascript:history.back()" class="voltar-seta"> <img src="img/voltar.png" alt="Voltar" /> </a>
+  <div class="content">
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+            <th></th>
+          </tr>
+        </thead>
+
+
+        <tbody id="cart-body"> <!-- Itens do carrinho serão inseridos aqui --> </tbody>
+      </table>
+    </section>
+    <aside>
+    
+
+      <div class="box">
+        <header>Resumo da compra</header>
+        <div class="info">
+          <div><span>Sub-total</span><span id="subtotal">R$ 0,00</span></div>
+          <div><span>Frete</span><span>Gratuito</span></div>
+        </div>
+        <footer> <span>Total</span> <span id="cart-total">R$ 0,00</span> </footer>
+      </div> <button onclick="finalizarPedido()">Finalizar compra</button>
+    </aside>
+  </div> 
+
+  <script src="public/carrinho.js"></script>
+
+  <div id="cart-container"></div>
+<script src="public/cart.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    renderCart("carrinho-container");
+  });
+</script>
+
+</body>
+
+</html>
