@@ -27,7 +27,7 @@ O site possui:
 ## 📸 Demonstração
 <p align="center">
   <!-- Aqui você pode colocar uma screenshot do site -->
-  <img src="https://via.placeholder.com/800x400.png?text=Screenshot+do+Benecake" alt="Demonstração do Benecake" width="600"/>
+  <img src="benecake.png" alt="Demonstração do Benecake" width="600"/>
 </p>
 
 👉 [Acesse o projeto online aqui](https://benecakes.netlify.app/)  
